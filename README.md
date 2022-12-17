@@ -10,7 +10,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/victoragbeleye" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="victoragbeleye" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/agbeleyevictor" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="agbeleyevictor" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/victoragbeleye" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="agbeleyevictor" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/17025772" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="17025772" height="30" width="40" /></a>
 <a href="https://fb.com/agbeleyevictor2" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="agbeleyevictor2" height="30" width="40" /></a>
 <a href="https://instagram.com/victor_agbeleye" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="victor_agbeleye" height="30" width="40" /></a>
