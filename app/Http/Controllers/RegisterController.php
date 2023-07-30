@@ -24,10 +24,11 @@ class RegisterController extends Controller
      */
     public function create()
     {
-        $request->validate([
-            'name' => 'name|required|max:255',
-            'email' => 'email|required|max:255',
-            'password' => 'password|required|min:8|max:255'
+        // $request->validate([ Wrong
+        request()->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'password' => 'required|min:8|max:255'
         ]);
     }
 
