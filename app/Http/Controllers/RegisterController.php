@@ -26,9 +26,9 @@ class RegisterController extends Controller
     {
         // $request->validate([ Wrong
         request()->validate([
-            'name' => ['required'], ['max:255'],
-            'email' => ['required'], ['max:255'],
-            'password' => ['required'], ['min:8'], ['max:255']
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'max:255'],
+            'password' => ['required', 'min:8', 'max:255']
         ]);
     }
 
