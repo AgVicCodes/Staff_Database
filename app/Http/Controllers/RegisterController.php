@@ -17,10 +17,6 @@ class RegisterController extends Controller
         return view('register');
     }
 
-    public function create() {
-        
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -28,7 +24,11 @@ class RegisterController extends Controller
      */
     public function create()
     {
-        //
+        $request->validate([
+            'name' => 'name',
+            'email' => 'email',
+            'password' => 'password'
+        ]);
     }
 
     /**
