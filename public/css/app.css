@@ -56,6 +56,12 @@ input:hover {
     transition-duration: 200ms;
 }
 
+input:focus {
+    border: 3px solid #ff006256;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+
 ul li:hover {
     font-weight: bold;
 }
