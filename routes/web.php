@@ -32,7 +32,9 @@ Route::get('/about', [PageController::class, "about"]);
 Route::get('/blog', [PageController::class, "blog"]);
 Route::get('/staff', [PageController::class, "staff"]);
 Route::get('/location', [PageController::class, "Location"]);
+
 Route::get('/register', [RegisterController::class, "index"]);
+Route::POST('/register', [RegisterController::class, "create"]);
 
 // Route::get('/', 'App\Http\Controllers\PageController@index');
 // Route::get('/', 'PageController@index'); Doesn't work
