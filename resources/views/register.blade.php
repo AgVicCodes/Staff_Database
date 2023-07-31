@@ -3,8 +3,9 @@
 @section('content')
     <main class="form-section">
         <h1 class="header">Register an Account</h1>
-        {{-- <form method="POST" action="/register"> --}}
-        <form action="/register">
+        <form method="POST" action="/register">
+            @csrf
+
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name"><br>
             
