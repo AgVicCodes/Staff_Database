@@ -92,8 +92,12 @@ input:focus {
     color: #fff;
 }
 
-.smb:active {
+.smb:hover {
     border: 3px solid #175f36;
+    background: none;
+    color: #175f36;
+    transition: ease-in-out;
+    transition-duration: 300ms;
 }
 
 /* header {
