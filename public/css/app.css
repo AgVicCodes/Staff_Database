@@ -1,6 +1,6 @@
 body {
     /* background-color: #390000; */
-    background-color: #f9f9f9;
+    background-color: #e6e6e6;
     color: #353535;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -64,7 +64,7 @@ form {
 }
 
 input {
-    border: 2px solid #f3f3f3;
+    border: 2px solid #e7e7e7;
     border-radius: 5px;
     height: 40px;
     margin-bottom: 20px;
