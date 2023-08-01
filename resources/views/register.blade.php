@@ -3,7 +3,8 @@
 @section('content')
     <main class="form-section">
         <h1 class="header">Register an Account</h1>
-        <form method="POST" action="/register">
+        {{-- <form method="POST" action="/register"> --}}
+        <form action="/register">
             <label for="name">Name</label><br>
             <input type="text" name="name" id="name"><br>
             
@@ -15,6 +16,8 @@
             
             <label for="password">Password</label><br>
             <input type="password" name="password" id="password"><br>
+
+            <button type="submit" class="smb">Register</button>
         </form>
     </main>
 @endsection
