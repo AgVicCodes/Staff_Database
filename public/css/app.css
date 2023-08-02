@@ -18,6 +18,12 @@ ul li {
     margin-right: 12.5px;
 }
 
+h1 {
+    position: relative;
+    left: 42%;
+    margin-bottom: 40px;
+}
+
 form {
     position: relative;
     left: 36%;
