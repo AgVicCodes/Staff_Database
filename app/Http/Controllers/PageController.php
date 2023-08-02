@@ -16,4 +16,25 @@ class PageController extends Controller
         return view("index");
     }
 
+    public function blog()
+    {
+        return view("blog");
+    }
+
+    public function staff()
+    {
+        return view("staff");
+    }
+
+    public function about()
+    {
+        return view("about");
+    }
+
+    public function location()
+    {
+        return view("location");
+    }
+
+
 }
