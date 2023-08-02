@@ -21,7 +21,6 @@
 
 
 
-
 {{-- <x-app>
     <section>
     </section>
