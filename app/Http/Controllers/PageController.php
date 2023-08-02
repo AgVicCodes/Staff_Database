@@ -11,30 +11,15 @@ class PageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view("index");
-    }
+    public function index() {return view("index");}
 
-    public function blog()
-    {
-        return view("blog");
-    }
+    public function blog() {return view("blog");}
 
-    public function staff()
-    {
-        return view("staff");
-    }
+    public function staff() {return view("staff");}
 
-    public function about()
-    {
-        return view("about");
-    }
+    public function about() {return view("about");}
 
-    public function location()
-    {
-        return view("location");
-    }
+    public function location() {return view("location");}
 
 
 }
