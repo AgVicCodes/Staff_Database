@@ -41,3 +41,4 @@ Route::get('/location', [PageController::class, "Location"]);
     or turn off system so as not to overwrite the error and cause 
     change to be irreversible. 
 */
+
