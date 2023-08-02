@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="form-section">
-    <h1>Register an Account</h1>
+    <h1 class="header">Register an Account</h1>
     <form action="POST">
         <label for="name">Name</label><br>
         <input type="text" name="name" id="name"><br>
