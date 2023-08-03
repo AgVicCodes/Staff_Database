@@ -19,6 +19,9 @@
                 <li><a href="/register">Register</a></li>
             </ul>
         </nav>
-    </header>  
+    </header>
+    <main>
+        @yield('content')
+    </main>  
 </body>
 </html>
