@@ -1,2 +1,5 @@
-@extends('layout.header')
+@extends('layouts/app')
+
+@section('content')
     Welcome to ACUMEN COLLEGE
+@endsection
