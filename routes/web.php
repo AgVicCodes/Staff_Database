@@ -26,4 +26,4 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/', 'PageController@index');
+Route::get('/', '/PageController@index');
