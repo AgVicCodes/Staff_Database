@@ -35,3 +35,9 @@ Route::get('/Location', [PageController::class, "Location"]);
 // Route::get('/', 'App\Http\Controllers\PageController@index');
 // Route::get('/', 'PageController@index'); Doesn't work
 
+/*  Note to self : Never paste a video of 100mb or more to project.
+    Also, don't let project be bigger than 100mb.
+    if pull request fails, rollback git and don't commit more changes
+    or turn off system so as not to overwrite the error and cause 
+    change to be irreversible. 
+*/
