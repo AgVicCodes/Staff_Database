@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/welcome', function () {
+    return view('index');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/', [PageController::class, "index"]);
+Route::get('/about', [PageController::class, "about"]);
+Route::get('/blog', [PageController::class, "blog"]);
+Route::get('/staff', [PageController::class, "staff"]);
+Route::get('/Location', [PageController::class, "Location"]);
+
+// Route::get('/', 'App\Http\Controllers\PageController@index');
+// Route::get('/', 'PageController@index'); Doesn't work
+
