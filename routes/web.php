@@ -26,4 +26,8 @@ Route::get('/about', function () {
     return view('about');
 });
 
-// Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, "index"]);
+
+// Route::get('/', 'App\Http\Controllers\PageController@index');
+// Route::get('/', 'PageController@index'); Doesn't work
+
