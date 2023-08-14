@@ -69,6 +69,6 @@
             </ul>
         </nav>
     </header>
-    Welcome to ACUMEN COLLEGE
+    Welcome to ACUMEN
 </body>
 </html>
