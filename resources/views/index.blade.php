@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="{{ css.app }}"> !not working
-    <style>
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ css.app }}"> !not working --}}
+    {{-- <style>
         body {
             background-color: #fcfcfc;
             color: #353535;
@@ -51,10 +52,8 @@
         header {
             /* margin: 0;
             padding: 0; */
-        }
-
-        
-    </style>
+        }        
+    </style> --}}
 </head>
 <body>
     <header>
