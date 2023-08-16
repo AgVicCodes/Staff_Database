@@ -3,6 +3,8 @@
 @section('title', 'HOME')
 
 @section('content')
-    HOMEPAGE
-    Welcome to ACUMEN COLLEGE
+    <h1>HOMEPAGE</h1>
+    <p>
+        Welcome to ACUMEN COLLEGE
+    </p>
 @endsection
