@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    ABOUT OUR SCHOOL
-</body>
-</html>
+@extends('layouts/app')
+
+@section('title', 'ABOUT')
+
+@section('content')
+    <h1>ABOUT PAGE</h1>
+    <p>
+        Learn about our school
+    </p>
+@endsection
