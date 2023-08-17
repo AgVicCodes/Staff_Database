@@ -2,7 +2,7 @@ body {
     /* background-color: #390000; */
     background-color: #fcfcfc;
     color: #353535;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul li a {
@@ -13,9 +13,18 @@ ul li a {
 ul li {
     display: inline;
     text-transform: uppercase;
-    font-family: 'Candara';
+    font-family: "Candara";
     margin-left: 12.5px;
     margin-right: 12.5px;
+}
+
+
+
+input {
+    border: 2px solid #f3f3f3;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 500px;
 }
 
 ul li:hover {
@@ -37,7 +46,6 @@ nav {
     justify-content: center;
     /* margin: 100px; */
     /* border: 10px dashed #cdcddc; */
-
 }
 
 /* header {
