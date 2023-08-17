@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Route::get('/about', [PageController::class, "about"]);
 Route::get('/blog', [PageController::class, "blog"]);
 Route::get('/staff', [PageController::class, "staff"]);
 Route::get('/location', [PageController::class, "Location"]);
+Route::get('/register', [RegisterController::class, "index"]);
 
 // Route::get('/', 'App\Http\Controllers\PageController@index');
 // Route::get('/', 'PageController@index'); Doesn't work
