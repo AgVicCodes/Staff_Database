@@ -19,12 +19,12 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/welcome', function () {
-    return view('index');
+Route::get('/staff', function () {
+    return view('staff');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/newstaff', function () {
+    return view('newStaff');
 });
 
 Route::get('/', [PageController::class, "index"]);
