@@ -1,6 +1,11 @@
 body {
+    background-color: #71591B;
+    background-blend-mode: multiply;
+    background-image: url("./Acumen2.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    overflow-x: hidden;
     /* background-color: #390000; */
-    background-color: #e0e0e0;
     color: #353535;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
