@@ -3,8 +3,14 @@
 @section('title', 'BLOG')
 
 @section('content')
-    <h1>BLOG PAGE</h1>
-    <p>
-        Welcome to our BLOG
-    </p>
+    
+    <article>
+        
+        <h1>BLOG PAGE</h1>
+        <p>
+            Welcome to our BLOG
+        </p>
+        
+    </article>
+    
 @endsection
