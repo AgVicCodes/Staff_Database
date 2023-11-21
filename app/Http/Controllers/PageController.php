@@ -16,11 +16,16 @@ class PageController extends Controller
     public function blog($slime) {
         
         // return $slime;
-        $post =  file_get_contents(__DIR__ . "../../../../resources/blog/{$slime}.html");
+        $path =  __DIR__ . "../../../../resources/blog/{$slime}.html";
         
-        if (file_exists($post)) {
-            dd("File doesn't exist");
+        if (! file_exists($path)) {
+            // dd("File does not exist");
+            // abort(500);
+            return redirect("/");
+
         }
+
+        $post = file_get_contents($path);
 
         return view("blog", ["post" => $post]);
 
