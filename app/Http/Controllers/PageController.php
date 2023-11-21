@@ -13,7 +13,18 @@ class PageController extends Controller
      */
     public function index() {return view("index");}
 
-    public function blog() {return view("blog");}
+    public function blog($slime) {
+        
+        // return $slime;
+        $post =  file_get_contents(__DIR__ . "../../../../resources/blog/{$slime}.html");
+        
+        if (file_exists($post)) {
+            dd("File doesn't exist");
+        }
+
+        return view("blog", ["post" => $post]);
+
+    }
 
     public function blogs() {return view("blogs");}
 

@@ -6,7 +6,7 @@
     
     <article>
         
-        <a href="/blog"><h1>BLOG 1</h1></a>
+        <a href="/blog/blog1"><h1>BLOG 1</h1></a>
         <p>
         
             Welcome to our Blog
@@ -20,7 +20,7 @@
 
     <article>
         
-        <a href="/blog"><h1>BLOG 2</h1></a>
+        <a href="/blog/blog2"><h1>BLOG 2</h1></a>
         <p>
         
             Welcome to our Blog
@@ -34,7 +34,7 @@
 
     <article>
         
-        <a href="/blog"><h1>BLOG 3</h1></a>
+        <a href="/blog/blog3"><h1>BLOG 3</h1></a>
         <p>
         
             Welcome to our Blog
