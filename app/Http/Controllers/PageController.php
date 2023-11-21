@@ -25,7 +25,13 @@ class PageController extends Controller
 
         }
 
-        $post = file_get_contents($path);
+        $post = cache()->remember("blog.{slime}", 3, function () use($path) {
+            
+            // var_dump($path);
+            return file_get_contents($path);
+            
+        });
+
 
         return view("blog", ["post" => $post]);
 
