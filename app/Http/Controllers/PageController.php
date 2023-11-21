@@ -15,6 +15,8 @@ class PageController extends Controller
 
     public function blog() {return view("blog");}
 
+    public function blogs() {return view("blogs");}
+
     public function staff() {return view("staff");}
 
     public function about() {return view("about");}

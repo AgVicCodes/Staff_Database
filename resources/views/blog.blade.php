@@ -6,11 +6,18 @@
     
     <article>
         
-        <h1>BLOG PAGE</h1>
+        <a href="/blogs"><h1>BLOG 1</h1></a>
         <p>
-            Welcome to our BLOG
+        
+            {{ $post }}
+
+            {{-- Welcome to our Blog
+        
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa autem doloremque ea nemo assumenda accusantium qui sint! Voluptate, ad aut numquam recusandae, ratione et a veniam neque modi quibusdam quidem? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa autem doloremque ea nemo assumenda accusantium qui sint! Voluptate, ad aut numquam recusandae, ratione et a veniam neque modi quibusdam quidem? --}}
+        
         </p>
+
         
     </article>
-    
+
 @endsection

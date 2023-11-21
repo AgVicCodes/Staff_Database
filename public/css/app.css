@@ -37,12 +37,24 @@ nav {
     /* border: 10px dashed #cdcddc; */
 }
 
-h1 {
+article {
     padding-top: 30px !important;
-    position: relative;
-    left: 27%;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
 }
+
+article + article {
+    margin-top: 40px;
+    border-top: 1px #25252552 solid;
+}
+
+/* h1, p {
+    text-align: center;
+} */
 
 form {
     position: relative;

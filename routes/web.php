@@ -30,6 +30,7 @@ Route::get('/newstaff', function () {
 Route::get('/', [PageController::class, "index"]);
 Route::get('/about', [PageController::class, "about"]);
 Route::get('/blog', [PageController::class, "blog"]);
+Route::get('/blogs', [PageController::class, "blogs"]);
 Route::get('/staff', [PageController::class, "staff"]);
 Route::get('/location', [PageController::class, "Location"]);
 

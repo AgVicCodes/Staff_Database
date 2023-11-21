@@ -12,8 +12,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/blogs">Blog</a></li>
+                {{-- <li><a href="/about">About</a></li> --}}
                 <li><a href="/staff">Staff</a></li>
                 <li><a href="/location">Location</a></li>
                 <li><a href="/login">Login</a></li>
