@@ -56,3 +56,7 @@ if pull request fails, rollback git and don't commit more changes
 or turn off system so as not to overwrite the error and cause 
 change to be irreversible. 
 */
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
