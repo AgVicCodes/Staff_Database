@@ -14,7 +14,22 @@ class StaffController extends Controller
      */
     public function index()
     {
-        //
+        return ("staff");
+    }
+
+    public function staffDB()
+    {
+        return ("staff");
+    }
+
+    public function newStaff()
+    {
+        return ("staff");
+    }
+
+    public function staffDetails()
+    {
+        return ("staff");
     }
 
     /**
