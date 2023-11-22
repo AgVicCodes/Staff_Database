@@ -25,6 +25,7 @@ class PageController extends Controller
 
         }
 
+        // now()->addSeconds(3);
         $post = cache()->remember("blog.{slime}", 3, function () use($path) {
             
             // var_dump($path);
