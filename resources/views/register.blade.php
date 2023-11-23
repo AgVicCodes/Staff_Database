@@ -1,4 +1,6 @@
-@extends('layouts.app')
+{{-- @extends('layouts.temp') --}}
+
+@section("title", "REGISTER")
 
 @section('content')
     <main class="form-section">
