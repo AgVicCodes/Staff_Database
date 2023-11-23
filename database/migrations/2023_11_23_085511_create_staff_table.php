@@ -29,7 +29,7 @@ class CreateStaffTable extends Migration
             $table->blob('doc_1');
             $table->blob('doc_2');
             $table->blob('doc_3');
-            $table->avatar();
+            $table->blob('avatar');
             $table->timestamps();
         });
     }
