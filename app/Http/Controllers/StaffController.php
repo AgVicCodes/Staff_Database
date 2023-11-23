@@ -19,12 +19,12 @@ class StaffController extends Controller
 
     public function staffDB()
     {
-        return ("staff");
+        return ("staffDB");
     }
 
     public function newStaff()
     {
-        return ("staff");
+        return ("newstaff");
     }
 
     public function staffDetails()
