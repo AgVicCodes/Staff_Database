@@ -44,8 +44,8 @@ Route::get('/location', [PageController::class, "Location"]);
 
 // Random Constraint
 // Route::get('/blog/{blog}', [PageController::class, "blog"])->where("blog", "[A-z/0-9/-/*]+");
-Route::get('/register', [RegisterController::class, "index"]);
-Route::POST('/register', [RegisterController::class, "create"]);
+// Route::get('/register', [RegisterController::class, "index"]);
+// Route::POST('/register', [RegisterController::class, "create"]);
 
 // Route::get('/', 'App\Http\Controllers\PageController@index');
 // Route::get('/', 'PageController@index'); Doesn't work

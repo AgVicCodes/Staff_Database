@@ -1,10 +1,10 @@
 @extends('layouts/temp')
 
-@section('title', 'STAFF DB')
+@section('title', 'STAFF')
 
 @section('content')
     <div class="container">
-        <h1>STAFF DATABASE</h1>
+        <h1>STAFF DETAILS</h1>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
