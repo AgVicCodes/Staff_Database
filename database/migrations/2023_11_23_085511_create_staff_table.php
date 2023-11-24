@@ -21,15 +21,15 @@ class CreateStaffTable extends Migration
             $table->string('status');
             $table->string('level');
             $table->string('role');
-            $table->string('phone');
-            $table->string('wage');
+            $table->int('phone');
+            $table->int('wage');
             $table->string('home_address');
             $table->string('social_media');
             $table->string('field');
-            $table->blob('doc_1');
-            $table->blob('doc_2');
-            $table->blob('doc_3');
-            $table->blob('avatar');
+            $table->binary('doc_1');
+            $table->binary('doc_2');
+            $table->binary('doc_3');
+            $table->binary('avatar');
             $table->timestamps();
         });
     }

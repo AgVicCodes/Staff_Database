@@ -9,6 +9,6 @@ class Staff extends Model
 {
     use HasFactory;
 
-    $staffNo = Staff::count();
+    // $staffNo = Staff::count();
 
 }
