@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\StaffController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,15 +21,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/staff', function () {
-    return view('staff');
-});
-
-Route::get('/newstaff', function () {
-    return view('newStaff');
-});
-
-// Route::get('/', [PageController::class, "index"]);
+Auth::routes();
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/staffDB', [StaffController::class, "staffDB"]);
+Route::get('/staffDB', [StaffController::class, "staffDB"]);
+Route::get('/staffDB', [StaffController::class, "staffDB"]);
 Route::get('/about', [PageController::class, "about"]);
 Route::get('/blog/{blog}', [PageController::class, "blog"])->whereAlphaNumeric("blog");
 Route::get('/blogs', [PageController::class, "blogs"]);
@@ -35,6 +33,7 @@ Route::get('/staff', [PageController::class, "staff"]);
 Route::get('/location', [PageController::class, "Location"]);
 
 
+// Route::get('/', [PageController::class, "index"]);
 // Text only constraint
 // Route::get('/blog/{blog}', [PageController::class, "blog"])->where("blog", "[A-z]+");
 // Route::get('/blog/{blog}', [PageController::class, "blog"])->whereAlpha("blog");
@@ -57,6 +56,3 @@ or turn off system so as not to overwrite the error and cause
 change to be irreversible. 
 */
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

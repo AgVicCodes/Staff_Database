@@ -12,24 +12,20 @@ class StaffController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function staff()
-    {
-        return ("staff");
-    }
 
     public function staffDB()
     {
-        return ("staffDB");
+        return view("staffDB");
     }
 
     public function newStaff()
     {
-        return ("newstaff");
+        return view("newstaff");
     }
 
     public function staffDetails()
     {
-        return ("staff");
+        return view("staff");
     }
 
     /**
