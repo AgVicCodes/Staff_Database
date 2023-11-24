@@ -1,6 +1,6 @@
-{{-- @extends('layouts.temp') --}}
+@extends('layouts.temp')
 
-@section("title", "REGISTER")
+@section("title", "REPORTS")
 
 @section('content')
     <main class="form-section">

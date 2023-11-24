@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-    <title>@yield('title') PAGE</title>
+    <title>EPU-Admin @yield('title')</title>
 </head>
 <body>
     <header>
@@ -22,12 +22,12 @@
                 {{-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
                     <!-- Left Side Of Navbar -->
                 <ul class="">
-                    <li><a href="/blogs">Dashboard  </a></li>
+                    <li><a href="/home">Dashboard</a></li>
                     {{-- <li><a href="/about">About</a></li> --}}
-                    <li><a href="/staff">Staff</a></li>
-                    <li><a href="/location">Inventories</a></li>
-                    <li><a href="/login">Reports</a></li>
-                    <li><a href="/register">Settings</a></li>
+                    <li><a href="/staffDB">Staff</a></li>
+                    <li><a href="/inventory">Inventories</a></li>
+                    <li><a href="/report">Reports</a></li>
+                    <li><a href="/settings">Settings</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

@@ -24,13 +24,14 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/staffDB', [StaffController::class, "staffDB"]);
-Route::get('/staffDB', [StaffController::class, "staffDB"]);
-Route::get('/staffDB', [StaffController::class, "staffDB"]);
-Route::get('/about', [PageController::class, "about"]);
+Route::get('/staffNew', [StaffController::class, "staffNew"]);
+Route::get('/staffDetails', [StaffController::class, "staffDetails"]);
+Route::get('/report', [PageController::class, "report"]);
+Route::get('/settings', [PageController::class, "settings"]);
 Route::get('/blog/{blog}', [PageController::class, "blog"])->whereAlphaNumeric("blog");
 Route::get('/blogs', [PageController::class, "blogs"]);
 Route::get('/staff', [PageController::class, "staff"]);
-Route::get('/location', [PageController::class, "Location"]);
+Route::get('/inventory', [PageController::class, "inventory"]);
 
 
 // Route::get('/', [PageController::class, "index"]);
@@ -55,4 +56,3 @@ if pull request fails, rollback git and don't commit more changes
 or turn off system so as not to overwrite the error and cause 
 change to be irreversible. 
 */
-

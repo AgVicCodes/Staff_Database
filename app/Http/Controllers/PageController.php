@@ -44,7 +44,11 @@ class PageController extends Controller
 
     public function about() {return view("about");}
 
-    public function location() {return view("location");}
+    public function inventory() {return view("inventory");}
+    
+    public function report() {return view("report");}
+
+    public function settings() {return view("settings");}
 
 
 }
