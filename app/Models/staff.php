@@ -9,6 +9,11 @@ class Staff extends Model
 {
     use HasFactory;
 
-    // $staffNo = Staff::count();
+    public static function find ($id) {
+
+        
+        // $staffNo = Staff::count();
+
+    }
 
 }

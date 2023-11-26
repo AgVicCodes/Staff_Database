@@ -44,3 +44,5 @@ class CreateStaffTable extends Migration
         Schema::dropIfExists('staff');
     }
 }
+
+// integer span 2,147,483,647

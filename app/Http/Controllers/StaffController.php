@@ -16,8 +16,8 @@ class StaffController extends Controller
 
     public function staffDB()
     {
-        // return view("staffDB");
-        return Staff::all();
+        $staff = DB::table('staff')->get();
+        return view("staffDB", ["staff" => $staff]);
     }
 
     public function newStaff()
