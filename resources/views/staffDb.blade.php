@@ -11,10 +11,18 @@
                 <div class="bg-red-500">Hello</div>
 
                 <button class="rounded-md">Add new staff</button>
+                <br>
+                @foreach ($staff as $employee)
                 
-                @foreach ($id as $staff)
-                
-                    {{ $staff }} 
+                    {{ $employee->id }} 
+                    {{ $employee->name }}
+                    {{ $employee->email }}
+                    {{ $employee->role }}
+                    {{ $employee->status }}
+                    {{ $employee->wage }}
+                    {{ $employee->home_address }}
+                    {{ $employee->field }}
+                    <br> 
                     
                 @endforeach
                 
