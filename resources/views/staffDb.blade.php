@@ -8,8 +8,15 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 
+                <div class="bg-red-500">Hello</div>
+
+                <button class="rounded-md">Add new staff</button>
                 
-                {{ $staff }}
+                @foreach ($id as $staff)
+                
+                    {{ $staff }} 
+                    
+                @endforeach
                 
                 
                 

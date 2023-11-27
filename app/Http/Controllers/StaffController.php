@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Staff;
@@ -16,8 +17,33 @@ class StaffController extends Controller
 
     public function staffDB()
     {
-        $staff = DB::table('staff')->get();
-        return view("staffDB", ["staff" => $staff]);
+        $staff = DB::table('staff')->first();
+        // $sum = DB::table('staff')->count();
+
+        // foreach ($staff as $employee) {
+            
+        //     echo $employee->id;
+        //     echo $employee->name;
+        //     echo $employee->email;
+        //     echo $employee->secondary_email;
+        //     echo $employee->status;
+        //     // echo $employee->level;
+        //     echo $employee->role;
+        //     echo $employee->phone;
+        //     echo $employee->wage;
+        //     echo $employee->home_address;
+        //     echo $employee->social_media;
+        //     echo $employee->field;
+        //     echo $employee->doc_1;
+        //     echo $employee->doc_2;
+        //     echo $employee->doc_3;
+        //     // echo $employee->avatar;
+            
+        //     echo "<br>";
+
+        // }
+
+        return view("staffDB", ["id" => $staff]);
     }
 
     public function newStaff()
