@@ -52,6 +52,16 @@ article + article {
     border-top: 1px #25252552 solid;
 }
 
+td img {
+    border-radius: 50%;
+    /* height: 20px !important;
+    width: 20px !important; */
+}
+
+/* tr {
+    height: 50px;
+} */
+
 /* h1, p {
     text-align: center;
 } */

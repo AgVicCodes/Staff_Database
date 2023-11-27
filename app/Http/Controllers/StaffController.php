@@ -24,12 +24,12 @@ class StaffController extends Controller
 
     public function newStaff()
     {
-        return view("newstaff");
+        return view("staffNew");
     }
 
     public function staffDetails()
     {
-        return view("staff");
+        return view("staffDetails");
     }
 
     /**

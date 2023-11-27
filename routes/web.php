@@ -24,7 +24,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/staffDB', [StaffController::class, "staffDB"]);
-Route::get('/staffNew', [StaffController::class, "staffNew"]);
+Route::get('/staffNew', [StaffController::class, "newStaff"]);
 Route::get('/staffDetails', [StaffController::class, "staffDetails"]);
 Route::get('/report', [PageController::class, "report"]);
 Route::get('/settings', [PageController::class, "settings"]);
