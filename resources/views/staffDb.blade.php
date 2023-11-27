@@ -12,20 +12,50 @@
 
                 <button class="rounded-md">Add new staff</button>
                 <br>
-                @foreach ($staff as $employee)
-                
-                    {{ $employee->id }} 
-                    {{ $employee->name }}
-                    {{ $employee->email }}
-                    {{ $employee->role }}
-                    {{ $employee->status }}
-                    {{ $employee->wage }}
-                    {{ $employee->home_address }}
-                    {{ $employee->field }}
-                    <br> 
-                    
-                @endforeach
-                
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Field</th>
+                        </tr>
+                        
+                        <tbody>
+                            <tr>
+                                @foreach ($staff as $employee)
+                                
+                                <th>
+                                    {{ $employee->id }} 
+                                </th>
+                                <td>
+                                    {{ $employee->name }}
+                                </td>
+                                <td>
+                                    {{ $employee->email }}
+                                </td>
+                                <td>
+                                    {{ $employee->status }}
+                                </td>
+                                <td>
+                                    {{ $employee->field }}
+                                </td>
+                                
+                                @endforeach
+                            </tr>
+                        </tbody>
+                        
+                        {{-- {{ $employee->role }}
+                        {{ $employee->wage }}
+                        {{ $employee->home_address }} --}}
+                        <br> 
+                            
+                        
+                    </thead>
+
+                </table>
                 
                 
                 {{-- <div class="card">
