@@ -17,7 +17,7 @@ class StaffController extends Controller
 
     public function staffDB()
     {
-        // Get staff details from database 
+        // Get staff details from database
         $staff = DB::table('staff')->get();
         return view("staffDB", ["staff" => $staff]);
     }

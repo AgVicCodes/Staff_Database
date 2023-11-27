@@ -13,7 +13,7 @@
                 <button class="rounded-md">Add new staff</button>
                 <br>
 
-                <table class="table">
+                <table class="table table-striped table-hover">
                     <thead>
                         <tr>
                             <th scope="col">Id</th>
@@ -24,27 +24,27 @@
                         </tr>
                         
                         <tbody>
-                            <tr>
-                                @foreach ($staff as $employee)
-                                
-                                <th>
-                                    {{ $employee->id }} 
-                                </th>
-                                <td>
-                                    {{ $employee->name }}
-                                </td>
-                                <td>
-                                    {{ $employee->email }}
-                                </td>
-                                <td>
-                                    {{ $employee->status }}
-                                </td>
-                                <td>
-                                    {{ $employee->field }}
-                                </td>
-                                
-                                @endforeach
-                            </tr>
+                            @foreach ($staff as $employee)
+                                <tr>
+                                    
+                                        <th scope="row">
+                                            {{ $employee->id }} 
+                                        </th>
+                                        <td>
+                                            {{ $employee->name }}
+                                        </td>
+                                        <td>
+                                            {{ $employee->email }}
+                                        </td>
+                                        <td>
+                                            {{ $employee->status }}
+                                        </td>
+                                        <td>
+                                            {{ $employee->field }}
+                                        </td>
+                                    
+                                </tr>
+                            @endforeach
                         </tbody>
                         
                         {{-- {{ $employee->role }}
