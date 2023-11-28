@@ -7,9 +7,16 @@
         <h1>STAFF DATABASE</h1>
         <div class="row justify-content-center">
             <div class="col-md-8">
-
-                <a class="btn btn-success" href="/staffNew">Add new staff</a>
-                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a class="btn btn-success" href="/staffNew">Add new staff</a>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <form action="POST" class="col-md-4">
+                        @csrf
+                        <input type="text" placeholder="Search" class="w-100 input input-success">
+                    </form>
+                </div>
 
                 <table class="table table-striped table-hover">
                     <thead>
@@ -32,7 +39,7 @@
                                     {{ $employee->id }} 
                                 </th>
                                 <td>
-                                    <a href="/staffDetails"><img src="{{ asset('img/avatar.png') }}" height="22" width="22" ></a>
+                                    <a href="/staffDetails/{{ $employee->id }}" ><img src="{{ asset('img/avatar.png') }}" height="22" width="22" ></a>
                                 </td>
                                 <td>
                                     {{ $employee->name }}
