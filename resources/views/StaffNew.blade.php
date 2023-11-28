@@ -15,9 +15,9 @@
                     <input type="text" name="email">
                     <label for="status" class="mt-4">Status</label>
                     <input type="text" name="status">
-                    <label for="" class="mt-4"></label>
-                    <input type="text" name="">
-                    <label for="" class="mt-4"></label>
+                    <label for="second" class="mt-4">Secondary Email</label>
+                    <input type="text" name="second">
+                    <label for="role" class="mt-4">Role</label>
                     <input type="text" name="">
                     <label for="" class="mt-4"></label>
                     <input type="text" name="">
