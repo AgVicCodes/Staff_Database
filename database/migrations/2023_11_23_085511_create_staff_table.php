@@ -15,21 +15,21 @@ class CreateStaffTable extends Migration
     {
         Schema::create('staff', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('secondary_email');
-            $table->boolean('active');
-            $table->string('level');
-            $table->string('role');
-            $table->int('phone');
-            $table->int('wage');
-            $table->string('home_address');
-            $table->string('social_media');
-            $table->string('field');
-            $table->binary('doc_1');
-            $table->binary('doc_2');
-            $table->binary('doc_3');
-            $table->binary('avatar');
+            $table->string('name', 25);
+            $table->string('email', 25);
+            $table->string('secondary_email', 25);
+            $table->boolean('active')->default(false);
+            $table->string('level', 7);
+            $table->string('role', 25);
+            $table->string('phone', 14);
+            $table->float('wage', 8, 2);
+            $table->text('home_address');
+            $table->string('social_media', 25);
+            $table->string('field', 25);
+            $table->binary('doc_1')->default("../../public/img/default.jpg");
+            $table->binary('doc_2')->default("../../public/img/default.jpg");
+            $table->binary('doc_3')->default("../../public/img/default.jpg");
+            $table->binary('avatar')->default("../../public/img/avatar.png");
             $table->timestamps();
         });
     }

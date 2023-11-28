@@ -19,6 +19,7 @@
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Status</th>
+                            <th scope="col">Role</th>
                             <th scope="col">Field</th>
                         </tr>
                     </thead>
@@ -40,7 +41,17 @@
                                     {{ $employee->email }}
                                 </td>
                                 <td>
-                                    {{ $employee->status }}
+
+                                    {{-- Difference btw == and === (Checking for data type equivalence) --}}
+
+                                    @if ($employee->active > 0)
+                                        Active
+                                    @else
+                                        Inactive
+                                    @endif
+                                </td>
+                                <td>
+                                    {{ $employee->role }}
                                 </td>
                                 <td>
                                     {{ $employee->field }}
