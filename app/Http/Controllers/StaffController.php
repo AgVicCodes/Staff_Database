@@ -31,7 +31,6 @@ class StaffController extends Controller
     public function staffDetails($id)
     {
         $staff = DB::table('staff')->where('id', $id)->first();
-        // $staffId = $staff->id;
         return view("staffDetails", ["staff" => $staff]);
     }
 
