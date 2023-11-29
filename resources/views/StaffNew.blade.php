@@ -21,24 +21,17 @@
             <label for="hire" class="mt-4">Hire-date</label>
             <input type="text" name="hire">
             <br>
-            <label for="" class="mt-4">Field</label>
-            <input type="text" name="">
+            <label for="field" class="mt-4">Field</label>
+            <input type="text" name="field">
             <br>
-            <label for="" class="mt-4"></label>
-            <input type="text" name="">
+            <label for="doc_1" class="mt-4">Curriculum Vitae</label>
+            <input type="file" name="doc_1">
             <br>
-            <label for="" class="mt-4"></label>
-            <input type="text" name="">
+            <label for="doc_2" class="mt-4">Cover Letter</label>
+            <input type="file" name="doc_2">
             <br>
-            <label for="" class="mt-4"></label>
-            <input type="text" name="">
-            <br>
-            <label for="" class="mt-4"></label>
-            <input type="text" name="">
-            <br>
-            <label for="" class="mt-4"></label>
-            <input type="text" name="">
-            <br>
+            <label for="doc_3" class="mt-4">Other</label>
+            <input type="file" name="doc_3">
         </form>
         <form action="/staffNew" method="post" enctype="multipart/form-data">
             @csrf
