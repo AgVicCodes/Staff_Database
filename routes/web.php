@@ -25,7 +25,7 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/staffDB', [StaffController::class, "staffDB"]);
 Route::get('/staffNew', [StaffController::class, "newStaff"]);
-Route::post('/staffNew', [StaffController::class, "newStaff"]);
+Route::post('/staffNew', [StaffController::class, "store"]);
 Route::get('/staffDetails/{id}', [StaffController::class, "staffDetails"]);
 Route::get('/report', [PageController::class, "report"]);
 Route::get('/settings', [PageController::class, "settings"]);

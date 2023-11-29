@@ -52,7 +52,7 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        ddd(request()->all());
     }
 
     /**
