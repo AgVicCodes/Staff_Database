@@ -58,6 +58,10 @@ td img {
     width: 20px !important; */
 }
 
+.avatar {
+    border-radius: 100px;
+}
+
 /* tr {
     height: 50px;
 } */
