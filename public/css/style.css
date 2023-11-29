@@ -66,43 +66,6 @@ td img {
     text-align: center;
 } */
 
-form {
-    position: relative;
-    left: 11%;
-    /* right: 10%; */
-}
-
-.form-section {
-    margin-top: 50px;
-    padding-bottom: 30px;
-    position: relative;
-    left: 31%;
-    width: 40rem;
-    background: #fafafa;
-    /* border: 10px solid white; */
-    border-radius: 50px;
-}
-
-input {
-    border: 2px solid #f3f3f3;
-    border-radius: 5px;
-    height: 40px;
-    margin-bottom: 20px;
-    width: 500px;
-}
-
-input:hover {
-    border: 3px solid #74baff56;
-    transition: ease-in-out;
-    transition-duration: 200ms;
-}
-
-input:focus {
-    border: 3px solid #ff006256;
-    transition: ease-in-out;
-    transition-duration: 200ms;
-}
-
 .smb {
     width: 130px;
     height: 50px;
