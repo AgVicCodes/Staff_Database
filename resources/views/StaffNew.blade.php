@@ -49,7 +49,12 @@
                         </span>
                     @enderror
                     
-                    <input type="text" class="form-control" name="status" required>
+                    <select name="status" required id="status" class="form-control">
+                        <option value="0">Select Staff Status</option>
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                        <option value="Probation">Probation</option>
+                    </select>
 
                     <label for="role" class="form-label mt-3">
                         Role
@@ -173,11 +178,12 @@
                     @enderror
 
                     <select name="level" required id="level" class="form-control">
-                        <option value="1">Level 1</option>
-                        <option value="2">Level 2</option>
-                        <option value="3">Level 3</option>
-                        <option value="4">Level 4</option>
-                        <option value="5">Level 5</option>
+                        <option value="0">Select Level</option>
+                        <option value="Level 1">Level 1</option>
+                        <option value="Level 2">Level 2</option>
+                        <option value="Level 3">Level 3</option>
+                        <option value="Level 4">Level 4</option>
+                        <option value="Level 5">Level 5</option>
                     </select>
                     
                 </div>

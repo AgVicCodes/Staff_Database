@@ -75,7 +75,7 @@ class StaffController extends Controller
             'wage' => $wage,
             'address' => $address,
             'social' => $social,
-            'hire' => $hire,
+            'hire_date' => $hire,
             'field' => $field
         ]);
         // return view("staffDetails");
