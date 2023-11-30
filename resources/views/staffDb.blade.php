@@ -53,11 +53,8 @@
 
                                     {{-- Difference btw == and === (Checking for data type equivalence) --}}
 
-                                    @if ($employee->active > 0)
-                                        Active
-                                    @else
-                                        Inactive
-                                    @endif
+                                    {{ $employee->status }}
+                                    
                                 </td>
                                 <td>
                                     {{ $employee->role }}
