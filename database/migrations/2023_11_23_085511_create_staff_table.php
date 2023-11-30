@@ -24,12 +24,13 @@ class CreateStaffTable extends Migration
             $table->string('phone', 14);
             $table->float('wage', 8, 2);
             $table->text('home_address');
+            $table->date('hire_date');
             $table->string('social_media', 25);
             $table->string('field', 25);
-            $table->binary('doc_1')->default("../../public/img/default.jpg");
-            $table->binary('doc_2')->default("../../public/img/default.jpg");
-            $table->binary('doc_3')->default("../../public/img/default.jpg");
-            $table->binary('avatar')->default("../../public/img/avatar.png");
+            $table->binary('doc_1')->nullable();
+            $table->binary('doc_2')->nullable();
+            $table->binary('doc_3')->nullable();
+            $table->binary('avatar')->nullable();
             $table->timestamps();
         });
     }
