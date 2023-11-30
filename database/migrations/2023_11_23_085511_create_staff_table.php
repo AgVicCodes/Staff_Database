@@ -18,7 +18,7 @@ class CreateStaffTable extends Migration
             $table->string('name', 25);
             $table->string('email', 25);
             $table->string('secondary_email', 25);
-            $table->boolean('active')->default(false);
+            $table->string('status');
             $table->string('level', 7);
             $table->string('role', 25);
             $table->string('phone', 14);

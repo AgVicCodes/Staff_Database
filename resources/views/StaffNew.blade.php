@@ -14,7 +14,7 @@
                         Add Image
                     </label>
                     
-                    @error('Add')
+                    @error('avatar')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -31,7 +31,7 @@
                         Name
                     </label>
                     
-                    @error('Name')
+                    @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -43,7 +43,7 @@
                         Email
                     </label>
                     
-                    @error('Email')
+                    @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -51,11 +51,35 @@
                     
                     <input type="email"  class="form-control shadow-sm" name="email" required>
                     
+                    <label for="phone" class="form-label mt-3">
+                        Phone
+                    </label>
+                    
+                    @error('phone')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="text"  class="form-control shadow-sm" name="phone" required>
+                    
+                    <label for="social" class="form-label mt-3">
+                        Social Media Handles
+                    </label>
+                    
+                    @error('social')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="text" n class="form-control shadow-sm" name="social" required>
+
                     <label for="status" class="form-label mt-3">
                         Status
                     </label>
                     
-                    @error('Status')
+                    @error('status')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -73,24 +97,24 @@
                         Salary
                     </label>
                     
-                    @error('Wage')
+                    @error('wage')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
                     
                     <select name="wage" required id="wage" class="form-control shadow-sm">
-                        <option value="0">Select Salary</option>
+                        <option value="0">Select Salary Range</option>
                         @for ($i=1; $i<=9; $i++)
                             <option value="{{ 3*$i+1 . '0000' }}">{{ 3*($i . '0000') . " - " . 3*($i+1 . '0000') }}</option>
                         @endfor
                     </select>
-
+                    
                     <label for="hire" class="form-label mt-3">
                         Hire date
                     </label>
                     
-                    @error('Hire')
+                    @error('hire')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -98,6 +122,43 @@
                     
                     <input type="date" class="form-control shadow-sm" name="hire" required>
                     
+                </div>
+                <div class="col-md-5">
+                    <label for="role" class="form-label mt-3">
+                        Role
+                    </label>
+                    
+                    @error('role')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="text" class="form-control shadow-sm" name="role" required>
+                    
+                    <label for="second" class="form-label mt-3">
+                        Secondary Email
+                    </label>
+                    
+                    @error('second')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="text" n class="form-control shadow-sm" name="second" required>
+                    
+                    <label for="home" class="form-label mt-3">
+                        Home Address
+                    </label>
+                    
+                    @error('home')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="text" class="form-control shadow-sm"  name="home" required>
                     
                     <label for="field" class="form-label mt-3">
                         Field
@@ -120,68 +181,6 @@
                         <option value="HR">HR</option>
                     </select>
 
-                </div>
-                <div class="col-md-5">
-                    <label for="role" class="form-label mt-3">
-                        Role
-                    </label>
-                    
-                    @error('Role')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                    <input type="text" class="form-control shadow-sm" name="role" required>
-                    
-                    <label for="second" class="form-label mt-3">
-                        Secondary Email
-                    </label>
-                    
-                    @error('Second')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                    <input type="text" n class="form-control shadow-sm" name="second" required>
-                    
-                    <label for="phone" class="form-label mt-3">
-                        Phone
-                    </label>
-                    
-                    @error('Phone')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                    <input type="text"  class="form-control shadow-sm" name="phone" required>
-                    
-                    <label for="home" class="form-label mt-3">
-                        Home Address
-                    </label>
-                    
-                    @error('Home')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                    <input type="text" class="form-control shadow-sm"  name="home" required>
-                    
-                    <label for="social" class="form-label mt-3">
-                        Social Media Handles
-                    </label>
-                    
-                    @error('Social')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                    <input type="text" n class="form-control shadow-sm" name="social" required>
-
                     <label for="level" class="form-label mt-3">
                         Level
                     </label>
@@ -199,6 +198,35 @@
                         @endfor
                     </select>
                     
+                    <label for="leave" class="form-label mt-3">
+                        Leave
+                    </label>
+                    
+                    @error('leave')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+
+                    <select name="leave" required id="leave" class="form-control shadow-sm">
+                        <option value="0">Leave Days Left</option>
+                        @for ($i=21; $i>=1; $i--)
+                            <option value="{{$i}}">{{ $i }}</option>
+                        @endfor
+                    </select>
+
+                    <label for="birth" class="form-label mt-3">
+                        Date of birth
+                    </label>
+                    
+                    @error('birth')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="date" class="form-control shadow-sm" name="hire" required>
+
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -210,7 +238,7 @@
                         Curriculum Vitae
                     </label>
                     
-                    @error('Curriculum')
+                    @error('curriculum')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -224,7 +252,7 @@
                         Cover Letter
                     </label>
                     
-                    @error('Cover')
+                    @error('cover')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
@@ -238,7 +266,7 @@
                         Other
                     </label>
                     
-                    @error('Other')
+                    @error('other')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
