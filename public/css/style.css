@@ -62,6 +62,17 @@ td img {
     border-radius: 100px;
 }
 
+.search-bar {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    z-index: 1;
+    margin-left: 29%;
+    margin-top: 10px;
+}
+
 /* tr {
     height: 50px;
 } */

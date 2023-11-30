@@ -9,12 +9,7 @@
             <div class="col-md-8">
 
                 {{ $staff->name }}
-                @if ( $staff->active > 0)
-                    Active
-                @else
-                    Inactive
-                @endif
-                
+                {{ $staff->status }}
                 {{ $staff->wage }}
                 {{ $staff->role }}
                 {{ $staff->field }}
