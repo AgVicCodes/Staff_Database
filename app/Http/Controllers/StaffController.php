@@ -52,7 +52,33 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
-        ddd(request()->all());
+        // echo(request("name"));
+        $name = request('name');
+        $email = request('email');
+        $second = request('second');
+        $status = request('status');
+        $level = request('level');
+        $role = request('role');
+        $phone = request('phone');
+        $wage = request('wage');
+        $address = request('home');
+        $hire = request('hire');
+        $social = request('social');
+        DB::table("Staff")->insert([
+            'name' => $name,
+            'email' => $email,
+            'second' => $second,
+            'active' => $status,
+            'level' => $level,
+            'role' => $role,
+            'phone' => $phone,
+            'wage' => $wage,
+            'address' => $address,
+            'social' => $social,
+            'hire' => $hire,
+            'field' => $field
+        ]);
+        // return view("staffDetails");
     }
 
     /**
