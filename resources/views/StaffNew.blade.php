@@ -20,7 +20,7 @@
                         </span>
                     @enderror
                     
-                    <input type="file" class="form-control" id="avatar" name="avatar">
+                    <input type="file" class="form-control shadow-sm" id="avatar" name="avatar">
                 </div>
             </div>
             <div class="row">
@@ -37,8 +37,20 @@
                         </span>
                     @enderror
                     
-                    <input type="text" class="form-control" name="n requiredame" required>
-
+                    <input type="text" class="form-control shadow-sm" name="n requiredame" required>
+                    
+                    <label for="email" class="form-label mt-3">
+                        Email
+                    </label>
+                    
+                    @error('Email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                    
+                    <input type="email"  class="form-control shadow-sm" name="email" required>
+                    
                     <label for="status" class="form-label mt-3">
                         Status
                     </label>
@@ -49,27 +61,16 @@
                         </span>
                     @enderror
                     
-                    <select name="status" required id="status" class="form-control">
-                        <option value="0">Select Staff Status</option>
+                    <select name="status" required id="status" class="form-control shadow-sm">
+                        <option value="0">Select Status</option>
                         <option value="Active">Active</option>
                         <option value="Inactive">Inactive</option>
                         <option value="Probation">Probation</option>
                     </select>
 
-                    <label for="role" class="form-label mt-3">
-                        Role
-                    </label>
                     
-                    @error('Role')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    
-                    <input type="text" class="form-control" name="role" required>
-
                     <label for="wage" class="form-label mt-3">
-                        Wage
+                        Salary
                     </label>
                     
                     @error('Wage')
@@ -78,7 +79,12 @@
                         </span>
                     @enderror
                     
-                    <input type="text" class="form-control" name="wage" required>
+                    <select name="wage" required id="wage" class="form-control shadow-sm">
+                        <option value="0">Select Salary</option>
+                        @for ($i=1; $i<=9; $i++)
+                            <option value="{{ 3*$i+1 . '0000' }}">{{ 3*($i . '0000') . " - " . 3*($i+1 . '0000') }}</option>
+                        @endfor
+                    </select>
 
                     <label for="hire" class="form-label mt-3">
                         Hire date
@@ -90,7 +96,7 @@
                         </span>
                     @enderror
                     
-                    <input type="date" class="form-control" name="hire" required>
+                    <input type="date" class="form-control shadow-sm" name="hire" required>
                     
                     
                     <label for="field" class="form-label mt-3">
@@ -103,21 +109,30 @@
                         </span>
                     @enderror
                     
-                    <input type="text" n class="form-control" name="field" required>
+                    <select name="Field" required id="Field" class="form-control shadow-sm">
+                        <option value="0">Select Field</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Legal">Legal</option>
+                        <option value="Hospitality">Hospitality</option>
+                        <option value="Site">Site</option>
+                        <option value="Account">Account</option>
+                        <option value="HR">HR</option>
+                    </select>
 
                 </div>
                 <div class="col-md-5">
-                    <label for="email" class="form-label mt-3">
-                        Email
+                    <label for="role" class="form-label mt-3">
+                        Role
                     </label>
                     
-                    @error('Email')
+                    @error('Role')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                     @enderror
                     
-                    <input type="email"  class="form-control" name="email" required>
+                    <input type="text" class="form-control shadow-sm" name="role" required>
                     
                     <label for="second" class="form-label mt-3">
                         Secondary Email
@@ -129,7 +144,7 @@
                         </span>
                     @enderror
                     
-                    <input type="text" n class="form-control" name="second" required>
+                    <input type="text" n class="form-control shadow-sm" name="second" required>
                     
                     <label for="phone" class="form-label mt-3">
                         Phone
@@ -141,7 +156,7 @@
                         </span>
                     @enderror
                     
-                    <input type="text"  class="form-control" name="phone" required>
+                    <input type="text"  class="form-control shadow-sm" name="phone" required>
                     
                     <label for="home" class="form-label mt-3">
                         Home Address
@@ -153,7 +168,7 @@
                         </span>
                     @enderror
                     
-                    <input type="text" class="form-control"  name="home" required>
+                    <input type="text" class="form-control shadow-sm"  name="home" required>
                     
                     <label for="social" class="form-label mt-3">
                         Social Media Handles
@@ -165,7 +180,7 @@
                         </span>
                     @enderror
                     
-                    <input type="text" n class="form-control" name="social" required>
+                    <input type="text" n class="form-control shadow-sm" name="social" required>
 
                     <label for="level" class="form-label mt-3">
                         Level
@@ -177,13 +192,11 @@
                         </span>
                     @enderror
 
-                    <select name="level" required id="level" class="form-control">
+                    <select name="level" required id="level" class="form-control shadow-sm">
                         <option value="0">Select Level</option>
-                        <option value="Level 1">Level 1</option>
-                        <option value="Level 2">Level 2</option>
-                        <option value="Level 3">Level 3</option>
-                        <option value="Level 4">Level 4</option>
-                        <option value="Level 5">Level 5</option>
+                        @for ($i=1; $i<=5; $i++)
+                            <option value="Level {{$i}}">Level {{ $i }}</option>
+                        @endfor
                     </select>
                     
                 </div>
@@ -203,7 +216,7 @@
                         </span>
                     @enderror
                     
-                    <input type="file"  class="form-control" id="doc_1" name="doc_1">
+                    <input type="file"  class="form-control shadow-sm" id="doc_1" name="doc_1">
                 </div>
                 <div class="col-md-4">
                     <label for="doc_2" class="form-label mt-3">
@@ -217,7 +230,7 @@
                         </span>
                     @enderror
                     
-                    <input type="file"  class="form-control" id="doc_2" name="doc_2">
+                    <input type="file"  class="form-control shadow-sm" id="doc_2" name="doc_2">
                 </div>
                 <div class="col-md-3">
                     <label for="doc_3" class="form-label mt-3">
@@ -231,7 +244,7 @@
                         </span>
                     @enderror
                     
-                    <input type="file"  class="form-control" id="doc_3" name="doc_3">
+                    <input type="file"  class="form-control shadow-sm" id="doc_3" name="doc_3">
                 </div>
                 <div class="col-md-1"></div>
             </div>

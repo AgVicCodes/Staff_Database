@@ -61,22 +61,27 @@ class StaffController extends Controller
         $role = request('role');
         $phone = request('phone');
         $wage = request('wage');
-        $address = request('home');
-        $hire = request('hire');
         $social = request('social');
+        $field = request('field');
+        $address = request('home');
+        $leave = request('leave');
+        $hire = request('hire');
+        $dob = request('dob');
         DB::table("Staff")->insert([
             'name' => $name,
             'email' => $email,
-            'second' => $second,
+            'secondary_email' => $second,
             'active' => $status,
             'level' => $level,
             'role' => $role,
             'phone' => $phone,
             'wage' => $wage,
-            'address' => $address,
-            'social' => $social,
+            'social_media' => $social,
+            'field' => $field,
+            'home_address' => $address,
+            'leave_days' => $leave,
             'hire_date' => $hire,
-            'field' => $field
+            'date_of_birth' => $dob
         ]);
         // return view("staffDetails");
     }

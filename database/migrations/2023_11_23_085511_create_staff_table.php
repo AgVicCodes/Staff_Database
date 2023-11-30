@@ -23,10 +23,12 @@ class CreateStaffTable extends Migration
             $table->string('role', 25);
             $table->string('phone', 14);
             $table->float('wage', 8, 2);
-            $table->text('home_address');
-            $table->date('hire_date');
             $table->string('social_media', 25);
             $table->string('field', 25);
+            $table->text('home_address');
+            $table->text('leave_days');
+            $table->date('hire_date');
+            $table->date('date_of_birth');
             $table->binary('doc_1')->nullable();
             $table->binary('doc_2')->nullable();
             $table->binary('doc_3')->nullable();
