@@ -71,7 +71,7 @@ class StaffController extends Controller
             'name' => $name,
             'email' => $email,
             'secondary_email' => $second,
-            'active' => $status,
+            'status' => $status,
             'level' => $level,
             'role' => $role,
             'phone' => $phone,

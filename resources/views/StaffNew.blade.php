@@ -37,7 +37,7 @@
                         </span>
                     @enderror
                     
-                    <input type="text" class="form-control shadow-sm" name="n requiredame" required>
+                    <input type="text" class="form-control shadow-sm" name="name" required>
                     
                     <label for="email" class="form-label mt-3">
                         Email
@@ -170,7 +170,7 @@
                         </span>
                     @enderror
                     
-                    <select name="Field" required id="Field" class="form-control shadow-sm">
+                    <select name="field" required id="Field" class="form-control shadow-sm">
                         <option value="0">Select Field</option>
                         <option value="Technology">Technology</option>
                         <option value="Engineering">Engineering</option>
@@ -225,7 +225,7 @@
                         </span>
                     @enderror
                     
-                    <input type="date" class="form-control shadow-sm" name="hire" required>
+                    <input type="date" class="form-control shadow-sm" name="dob" required>
 
                 </div>
                 <div class="col-md-1"></div>

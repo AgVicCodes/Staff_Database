@@ -17,9 +17,7 @@ class StaffFactory extends Factory
     {
         // return [
             
-        Staff::factory()
-                ->count(28)
-                ->create();
+        Staff::factory()->count(28)->create();
             
         // ];
     }
