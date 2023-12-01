@@ -20,16 +20,21 @@ class StaffController extends Controller
         // Get staff details from database
         $staff = DB::table('staff')->get();
         
+        // Return the staff data from the 
+        // database to the page
         return view("staffDB", ["staff" => $staff]);
     }
 
     public function newStaff()
     {
+        // Return a view to upload staff data
         return view("staffNew");
     }
 
     public function staffDetails($id)
     {
+        // Get a single row of staff details
+        // from the id.
         $staff = DB::table('staff')->where('id', $id)->first();
         return view("staffDetails", ["staff" => $staff]);
     }
@@ -52,7 +57,8 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
-        // echo(request("name"));
+        // Passing data from view to 
+        // separate variables
         $name = request('name');
         $email = request('email');
         $second = request('second');
@@ -67,6 +73,9 @@ class StaffController extends Controller
         $leave = request('leave');
         $hire = request('hire');
         $dob = request('dob');
+
+        // Passing said variables to 
+        // the database
         DB::table("Staff")->insert([
             'name' => $name,
             'email' => $email,

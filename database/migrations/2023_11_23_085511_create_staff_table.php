@@ -16,8 +16,8 @@ class CreateStaffTable extends Migration
         Schema::create('staff', function (Blueprint $table) {
             $table->id();
             $table->string('name', 25);
-            $table->string('email', 25);
-            $table->string('secondary_email', 25);
+            $table->string('email', 40);
+            $table->string('secondary_email', 40);
             $table->string('status');
             $table->string('level', 7);
             $table->string('role', 25);
