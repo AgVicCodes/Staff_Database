@@ -15,6 +15,8 @@ class CreateStaffTable extends Migration
     {
         Schema::create('staff', function (Blueprint $table) {
             $table->id();
+            // $table->unsignedBigInteger('User_id');
+            $table->foreignId('User_id')->constrained('users');
             $table->string('name', 25);
             $table->string('email', 40);
             $table->string('secondary_email', 40);
@@ -34,6 +36,9 @@ class CreateStaffTable extends Migration
             $table->binary('doc_3')->nullable();
             $table->binary('avatar')->nullable();
             $table->timestamps();
+            
+            // $table->foreignId('User_id')->references('id')->on('users');
+            
         });
     }
 

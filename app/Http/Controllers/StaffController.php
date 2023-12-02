@@ -59,6 +59,7 @@ class StaffController extends Controller
     {
         // Passing data from view to 
         // separate variables
+        
         $name = request('name');
         $email = request('email');
         $second = request('second');
