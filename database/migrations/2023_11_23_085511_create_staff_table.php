@@ -16,7 +16,7 @@ class CreateStaffTable extends Migration
         Schema::create('staff', function (Blueprint $table) {
             $table->id();
             // $table->unsignedBigInteger('User_id');
-            $table->foreignId('User_id')->constrained('users');
+            // $table->foreignId('User_id')->constrained('users');
             $table->string('name', 25);
             $table->string('email', 40);
             $table->string('secondary_email', 40);

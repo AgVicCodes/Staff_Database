@@ -6,15 +6,36 @@
     <div class="container">
         <h1>STAFF DETAILS</h1>
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            {{-- <div class="col-md-2"> --}}
 
-                {{ $staff->name }}
-                {{ $staff->status }}
-                {{ $staff->wage }}
-                {{ $staff->role }}
-                {{ $staff->field }}
-                {{-- {{ $staff-> }} --}}
-            
+                 
+                
+                
+                
+            {{-- </div> --}}
+            <div class="col-md-7 list-items summary">
+                
+                <ul>
+                    <li>
+                        NAME: {{ $staff->name }}
+                    </li>
+                    <li>
+                        STATUS: {{ $staff->status }}
+                    </li>
+                    <li>
+                        ROLE: {{ $staff->role }}
+                    </li>
+                    <li>
+                        WAGE: {{ $staff->wage }}
+                    </li>
+                    <li>
+                        HIRE-DATE: {{ $staff->hire_date }}
+                    </li>
+                    <li>
+                        FIELD: {{ $staff->field }}
+                    </li>
+                </ul>
+                
             </div>
         </div>
     </div>
