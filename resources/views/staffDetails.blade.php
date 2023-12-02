@@ -14,7 +14,6 @@
                 
             {{-- </div> --}}
             <div class="col-md-7 list-items summary">
-                
                 <ul>
                     <li>
                         NAME: {{ $staff->name }}
@@ -34,7 +33,14 @@
                     <li>
                         FIELD: {{ $staff->field }}
                     </li>
+                    <li>
+                    </li>
                 </ul>
+                
+                
+                
+            
+            
                 
             </div>
         </div>
