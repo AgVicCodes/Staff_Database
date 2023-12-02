@@ -28,6 +28,7 @@ Route::get('/staffNew', [StaffController::class, "newStaff"]);
 Route::post('/staffNew', [StaffController::class, "store"]);
 Route::get('/staffDetails/{id}', [StaffController::class, "staffDetails"]);
 Route::get('/report', [PageController::class, "report"]);
+Route::get('/app', [PageController::class, "index"]);
 Route::get('/settings', [PageController::class, "settings"]);
 Route::get('/blog/{blog}', [PageController::class, "blog"])->whereAlphaNumeric("blog");
 Route::get('/blogs', [PageController::class, "blogs"]);

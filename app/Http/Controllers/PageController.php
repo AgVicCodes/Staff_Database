@@ -11,7 +11,7 @@ class PageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {return view("index");}
+    public function index() {return view("app");}
 
     public function blog($slime) {
         
