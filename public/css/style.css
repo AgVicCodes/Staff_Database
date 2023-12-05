@@ -62,6 +62,21 @@ td img {
     border-radius: 100px;
 }
 
+.user-image {
+    border: 10px solid #fff;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.section-headers li {
+    display: inline;
+}
+
+.details-list li {
+    list-style: none;
+}
+
+
 .search-bar {
     position: relative;
 }

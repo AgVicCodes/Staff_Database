@@ -59,7 +59,6 @@ class StaffController extends Controller
     {
         // Passing data from view to 
         // separate variables
-        
         $name = request('name');
         $email = request('email');
         $second = request('second');
@@ -74,6 +73,10 @@ class StaffController extends Controller
         $leave = request('leave');
         $hire = request('hire');
         $dob = request('dob');
+        $avatar_Path = request()->file('avatar')->store('avatar');
+        $doc_1_Path = request()->file('doc_1')->store('doc_1');
+        $doc_2_Path = request()->file('doc_2')->store('doc_2');
+        $doc_3_Path = request()->file('doc_3')->store('doc_3');
 
         // Passing said variables to 
         // the database
@@ -93,7 +96,7 @@ class StaffController extends Controller
             'hire_date' => $hire,
             'date_of_birth' => $dob
         ]);
-        // return view("staffDetails");
+        return view("staffDetails");
     }
 
     /**
