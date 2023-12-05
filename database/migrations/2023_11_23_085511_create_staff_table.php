@@ -31,10 +31,10 @@ class CreateStaffTable extends Migration
             $table->text('leave_days');
             $table->date('hire_date');
             $table->date('date_of_birth');
-            $table->binary('doc_1')->nullable();
-            $table->binary('doc_2')->nullable();
-            $table->binary('doc_3')->nullable();
-            $table->binary('avatar')->nullable();
+            $table->string('doc_1')->nullable();
+            $table->string('doc_2')->nullable();
+            $table->string('doc_3')->nullable();
+            $table->string('avatar')->nullable();
             $table->timestamps();
             
             // $table->foreignId('User_id')->references('id')->on('users');

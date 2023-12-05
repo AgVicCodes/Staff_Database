@@ -57,6 +57,13 @@ class StaffController extends Controller
      */
     public function store(Request $request)
     {
+
+        $staff = request()->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'avatar' => 'required|image'
+        ]);
+
         // Passing data from view to 
         // separate variables
         $name = request('name');
