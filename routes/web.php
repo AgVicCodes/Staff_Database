@@ -17,8 +17,8 @@ use App\Http\Controllers\StaffController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/nav', function () {
+    return view('layouts.temp');
 });
 
 Auth::routes();

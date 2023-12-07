@@ -1,3 +1,31 @@
 :root {
+    background-color: #EFEFEF;
+    color-scheme: #F9F9F9, #395230, #fff, #EEEEEE, #345327, #EFEFEF;
+    /*              nav-bg    faded  icons:hover nav-separator button      bg */
+    font-family: 'outfit', 'Rhodium Libre';
+
+}
+
+header {
+    background-color: #fff;
+    /* display: flex;
+    flex-direction: row; */
+    width: max-content;
+    height: 100vh;
+    margin-left: 100px;
+    margin-top: 100px;
+    box-shadow: 3px 0px 30px #00000010;
+}
+
+header nav {
+    margin-left: auto;
     
+}
+
+header nav ul {
+    /* color: #345327; */
+}
+
+header nav ul li {
+    list-style: none;
 }
