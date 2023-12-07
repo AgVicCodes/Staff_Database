@@ -44,19 +44,20 @@ header nav ul li {
     transition: 300ms ease-in-out;
     transition-property: 'color';
 }
+
 header nav ul li a {
     color: #345327;
     text-decoration: none;
-}
-
-header nav ul li a:hover {
-    border: 10px solid #f00;
-}   
+} 
 
 header nav ul li:hover {
     color: #fff;
     background: #345327;
 }
+
+header nav ul li:hover a {
+    color: #fff;
+}  
 
 main {
     position: relative;
