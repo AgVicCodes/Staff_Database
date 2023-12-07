@@ -9,7 +9,7 @@
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-3">
-                        <a class="btn btn-success" href="/staffNew">Add new staff</a>
+                        <a href="/staffNew">Add new staff</a>
                     </div>
                     <div class="col-2"></div>
                     <div class="col-7">

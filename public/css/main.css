@@ -64,3 +64,8 @@ main {
     z-index: -1;
     margin-left: 25vh;
 }
+
+a {
+    cursor: default;
+    text-decoration: line-through;
+}
