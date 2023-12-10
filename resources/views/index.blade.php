@@ -7,4 +7,5 @@
     <p>
         Welcome to ACUMEN COLLEGE
     </p>
+    <a href="/staffNew"><button>Create</button></a>
 @endsection

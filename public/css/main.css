@@ -1,9 +1,8 @@
 :root {
-    background-color: #EFEFEF;
-    color-scheme: #F9F9F9, #395230, #fff, #EEEEEE, #345327, #EFEFEF;
+    background-color: #efefef;
+    color-scheme: #f9f9f9, #395230, #fff, #eeeeee, #345327, #efefef;
     /*              nav-bg    faded  icons:hover nav-separator button      bg */
-    font-family: 'outfit', 'Rhodium Libre';
-
+    font-family: "outfit", "Rhodium Libre";
 }
 
 .logo {
@@ -11,17 +10,17 @@
     display: flex;
     margin: auto;
     padding: 25px 15px;
-    border-bottom: 2px solid #EFEFEF;
+    border-bottom: 2px solid #efefef;
 }
 
 header {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     width: max-content;
-    height: 100vh;
+    height: 200vh;
     position: absolute;
     margin-left: -10px;
     margin-top: -10px;
-    box-shadow: 3px 0px 30px #00000010;
+    box-shadow: 3px 0px 30px #00000020;
 }
 
 header nav ul {
@@ -39,16 +38,16 @@ header nav ul {
 header nav ul li {
     padding: 20px 0px;
     font-size: 12px;
-    border-bottom: 2px solid #EFEFEF;
+    border-bottom: 2px solid #efefef;
     list-style: none;
     transition: 300ms ease-in-out;
-    transition-property: 'color';
+    transition-property: "color";
 }
 
 header nav ul li a {
     color: #345327;
     text-decoration: none;
-} 
+}
 
 header nav ul li:hover {
     color: #fff;
@@ -57,10 +56,10 @@ header nav ul li:hover {
 
 header nav ul li:hover a {
     color: #fff;
-}  
+}
 
 main {
-    position: relative;
+    /* position: relative; */
     z-index: -1;
     margin-left: 25vh;
 }
@@ -68,4 +67,75 @@ main {
 a {
     cursor: default;
     text-decoration: line-through;
+}
+
+thead {
+    color: #f9f9f9;
+    background-color: #39523090;
+    /* border: 1px solid #395230; */
+}
+
+table {
+    /* border: 1px solid #395230; */
+    border-collapse: collapse;
+}
+
+th {
+    padding: 16px 0px;
+}
+
+tbody tr {
+    /* border-radius: 10px; */
+    color: #818181;
+    background-color: #fbfbfb;
+}
+
+tbody tr:nth-child(2n) {
+    color: #818181;
+    background-color: #39523015;
+}
+
+td {
+    padding: 8px 16px;
+}
+
+td a img {
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+#border-top-left {
+    border-radius: 10px 0px 0px 0px;
+}
+
+#border-top-right {   
+    border-radius: 0px 10px 0px 0px;
+}
+
+.cta-1 {
+    background-color: #3d4e37;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    color: #efefef;
+}
+
+.search {
+    display: flex;
+    background-color: #fff;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-icon {
+    margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.search-bar {
+    border: none;
 }
