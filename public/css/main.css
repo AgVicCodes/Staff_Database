@@ -63,6 +63,7 @@ main {
     /* position: relative; */
     z-index: -1;
     margin-left: 25vh;
+    margin-top: 10vh;
     width: 80%;
 }
 
@@ -155,6 +156,7 @@ td a img {
     background-color: #fcfcfc;
     width: 300px;
     height: 40px;
+    border: 3px solid #eeeeee;
     border-radius: 10px;
     box-shadow: 0px 5px 5px #00000010;
 }
@@ -172,4 +174,78 @@ td a img {
     outline: none;
     width: 100%;
     border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.item-1 {
+    background-color: #00000020;
+    border: 10px solid #345327;
+}
+
+.item-2 {
+    grid-column: 2/7;
+}
+
+.item-4 {
+    grid-column: 2/3;
+}
+
+.item-5 {
+    grid-column: 3/7;
+}
+
+.item-6 {
+    grid-column: 2/7;
+}
+
+.half-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.half-2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.item-8 {
+    grid-column: 2/7;
+}
+
+input {
+    display: flex;
+    height: 35px;
+    width: 450px;
+    color: #8f8f8f;
+    background-color: #fcfcfc;
+    border: 3px solid #ececec;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+select {
+    display: flex;
+    height: 43px;
+    width: 450px;
+    color: #8f8f8f;
+    background-color: #fcfcfc;
+    border: 3px solid #ececec;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+::-webkit-file-upload-button {
+    background-color: #fcfcfc;
+    border: none;
+    height: inherit;
+}
+
+.avatar {
+    border-radius: 50px;
 }

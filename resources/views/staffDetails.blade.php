@@ -3,11 +3,11 @@
 @section('title', 'STAFF')
 
 @section('content')
-    <div class="container">
-        <h1>STAFF DETAILS</h1>
+    <div class="grid-container">
+        {{-- <h1>STAFF DETAILS</h1> --}}
                  
-        <img src="{{asset('img/avatar.png')}}" width="200" height="200" class="user-image" alt="user-image">
-        <ul>
+        <img src="{{asset('img/avatar.png')}}" width="200" height="200" class="user-image item-1" alt="user-image">
+        <ul class="item-2">
             <li>
                 NAME: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {{ $staff->name }}
             </li>
@@ -28,7 +28,7 @@
             </li>
         </ul>
         
-        <section class="mt-4">
+        <section class="mt-4 item-3">
             
             <h5>DETAILS</h5>
             <h6>CONTACT DETAILS</h6>
@@ -55,8 +55,8 @@
             
         </section>
 
-        <div class="col-md-5">Pie Chart</div>
-        <section class="mt-4">
+        <div class="col-md-5 item-4">Pie Chart</div>
+        <section class="mt-4 item-5">
             
             <h5>QUALIFICATIONS</h5>
             <h6>CONTACT DETAILS</h6>
@@ -84,9 +84,9 @@
         </section>
         
 
-        <div class="col-md-5">Pie Chart</div>
+        <div class="col-md-5 item-6">Pie Chart</div>
 
-        <section class="mt-4">
+        <section class="mt-4 item-7">
                     
             <h5>NOTES</h5>
             <h6>CONTACT DETAILS</h6>
@@ -113,5 +113,6 @@
 
         </section>
                 
-        <div class="col-md-5">Pie Chart</div>
+        <div class="col-md-5 item-8">Pie Chart</div>
+        
 @endsection

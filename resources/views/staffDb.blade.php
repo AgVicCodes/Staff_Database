@@ -24,7 +24,7 @@
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Start date</th>
+                    <th scope="col">Hire date</th>
                     <th scope="col">Role</th>
                     <th scope="col">Field</th>
                     <th scope="col" id="border-top-right">No. of Leave Days Left</th>
@@ -92,7 +92,6 @@
                 {{ __('You are logged in!') }}
             </div>
         </div> --}}
-        Add years spent with the company
         
     </div>
 @endsection
