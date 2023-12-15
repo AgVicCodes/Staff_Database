@@ -3,12 +3,11 @@
 @section('title', 'NEW STAFF')
 
 @section('content')
-    <div class="grid-container">
-        <form action="/staffNew" method="POST" enctype="multipart/form-data">
+    <div>
+        <form action="/staffNew" method="POST" class="input-grid" enctype="multipart/form-data">
             @csrf
-            {{-- <div class="row"> --}}
-            {{-- <div class="col-md-1"></div> --}}
-            <div class="half-2">
+            <div class="half-1">
+
                 <label for="avatar" class="form-label mt-3">
                     <img src="{{asset('img/avatar.png')}}" alt="icon" width="100" height="100" class="avatar">
                     Add Image
@@ -21,16 +20,11 @@
                 @enderror
                 
                 <input type="file" class="form-control shadow-sm" id="avatar" name="avatar">
-            </div>
-            {{-- </div> --}}
-            {{-- <div class="row"> --}}
-            {{-- <div class="col-md-1"></div> --}}
-            <div class="col-md-5">
-
+                
                 <label for="name" class="form-label mt-3">
                     Name
                 </label>
-                
+            
                 @error('name')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -121,9 +115,11 @@
                 @enderror
                 
                 <input type="date" class="form-control shadow-sm" name="hire" required>
-                
+            
             </div>
-            <div class="col-md-5">
+            
+            <div class="half-2">
+
                 <label for="role" class="form-label mt-3">
                     Role
                 </label>
@@ -226,13 +222,11 @@
                 @enderror
                 
                 <input type="date" class="form-control shadow-sm" name="dob" required>
-
+                
             </div>
-            {{-- <div class="col-md-1"></div> --}}
-            {{-- </div> --}}
-            {{-- <div class="row mt-4"> --}}
-            {{-- <div class="col-md-1"></div> --}}
-            <div class="col-md-3">
+              
+            <div class="half-1">
+                
                 <label for="doc_1" class="form-label mt-3">
                     <img type="file" src="{{asset('img/default.jpg')}}" alt="icon" width="100" height="100" class="avatar">
                     Curriculum Vitae
@@ -245,8 +239,6 @@
                 @enderror
                 
                 <input type="file"  class="form-control shadow-sm" id="doc_1" name="doc_1">
-            </div>
-            <div class="col-md-4">
                 <label for="doc_2" class="form-label mt-3">
                     <img type="file" src="{{asset('img/default.jpg')}}" alt="icon" width="100" height="100" class="avatar">
                     Cover Letter
@@ -259,8 +251,6 @@
                 @enderror
                 
                 <input type="file"  class="form-control shadow-sm" id="doc_2" name="doc_2">
-            </div>
-            <div class="col-md-3">
                 <label for="doc_3" class="form-label mt-3">
                     <img type="file" src="{{asset('img/default.jpg')}}" alt="icon" width="100" height="100" class="avatar">
                     Other
@@ -273,15 +263,9 @@
                 @enderror
                 
                 <input type="file"  class="form-control shadow-sm" id="doc_3" name="doc_3">
+                <button type="submit" class="btn cta-1 btn-success mt-4 mb-4">SUBMIT</button>  
+                    
             </div>
-            {{-- <div class="col-md-1"></div> --}}
-            {{-- </div> --}}
-            {{-- <div class="row"> --}}
-            {{-- <div class="col-md-1"></div> --}}
-            {{-- <div class="col-md-11"> --}}
-            <button type="submit" class="btn btn-success mt-4 mb-4">SUBMIT</button>  
-            {{-- </div>
-            </div> --}}
         </form>
     </div>
 @endsection
