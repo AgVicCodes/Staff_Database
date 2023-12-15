@@ -3,10 +3,13 @@
 @section('title', 'STAFF DB')
 
 @section('content')
-    <div class="container">
+    <div class="table-grid">
         {{-- <h1>STAFF DATABASE</h1> --}}
-        <div class="top-part">
+        <div class="space-1">
             <a href="/staffNew"><button class="cta-1">Add new staff</button></a>
+        </div>
+        
+        <div class="space-2">
             <form action="GET">
                 @csrf
                 <div class="search">
@@ -27,7 +30,7 @@
                     <th scope="col">Hire date</th>
                     <th scope="col">Role</th>
                     <th scope="col">Field</th>
-                    <th scope="col" id="border-top-right">No. of Leave Days Left</th>
+                    <th scope="col" id="border-top-right">Leaves</th>
                 </tr>
             </thead>
             

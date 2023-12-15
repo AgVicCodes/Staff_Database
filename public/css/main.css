@@ -62,9 +62,9 @@ header nav ul a:hover li {
 main {
     /* position: relative; */
     z-index: -1;
-    margin-left: 25vh;
+    /* margin-left: 25vh; */
     margin-top: 10vh;
-    width: 80%;
+    /* width: 80%; */
 }
 
 a {
@@ -133,19 +133,10 @@ td a img {
     border-radius: 0px 10px 0px 0px;
 }
 
-.top-part {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 16px;
-    /* border: 3px solid #345327; */
-    /* width: 90%; */
-
-}
-
 .cta-1 {
     background-color: #3d4e37;
     padding: 12px 24px;
+    height: 40px;
     border-radius: 8px;
     border: none;
     color: #efefef;
@@ -154,7 +145,7 @@ td a img {
 .search {
     display: flex;
     background-color: #fcfcfc;
-    width: 300px;
+    width: auto;
     height: 40px;
     border: 3px solid #eeeeee;
     border-radius: 10px;
@@ -221,6 +212,37 @@ td a img {
     grid-column: 4/7;
 }
 
+.table-grid {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+.space-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.space-2 {
+    grid-column-start: 8;
+    grid-column-end: 10;
+}
+
+.top-part {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 16px;
+    /* border: 3px solid #345327; */
+    /* width: 90%; */
+
+}
+
+.table {
+    margin-top: 24px;
+    grid-column-start: 2;
+    grid-column-end: 10;
+}
+
 input {
     display: flex;
     height: 35px;
@@ -255,6 +277,16 @@ select {
     border-radius: 50px;
 }
 
-@media only screen and ()  {
+@media only screen and (max-device-width: 500px)  {
+    
+}
+
+
+@media only screen and (max-device-width: 500px)  {
+    
+}
+
+
+@media only screen and (max-device-width: 500px)  {
     
 }
