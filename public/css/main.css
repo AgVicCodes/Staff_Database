@@ -1,10 +1,31 @@
+/* Style by @AgVictorCodes */
+
+/* General Style */
 :root {
     background-color: #efefef;
     color-scheme: #f9f9f9, #395230, #fff, #eeeeee, #345327, #efefef;
     /*              nav-bg    faded  icons:hover nav-separator button      bg */
     font-family: "outfit", "Rhodium Libre";
 }
-         
+   
+main {
+    /* position: relative; */
+    z-index: -1;
+    margin-left: 5%;
+    margin-top: 10vh;
+    /* width: 80%; */
+}
+
+.cta-1 {
+    background-color: #3d4e37;
+    padding: 12px 24px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: #efefef;
+}
+
+/* Navbar */
 .logo {
     width: auto;
     display: flex;
@@ -59,19 +80,12 @@ header nav ul a:hover li {
     color: #fff;
 }
 
-main {
-    /* position: relative; */
-    z-index: -1;
-    /* margin-left: 25vh; */
-    margin-top: 10vh;
-    /* width: 80%; */
-}
-
 a {
     cursor: default;
     text-decoration: none;
 }
 
+/* Staff Database */
 table {
     /* border: 1px solid #395230; */
     border-collapse: collapse;
@@ -94,6 +108,7 @@ tbody tr {
     color: #818181;
     background-color: #fbfbfb;
     font-weight: 200;
+    font-size: 14px;
 }
 
 tbody tr:hover {
@@ -133,21 +148,12 @@ td a img {
     border-radius: 0px 10px 0px 0px;
 }
 
-.cta-1 {
-    background-color: #3d4e37;
-    padding: 12px 24px;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    color: #efefef;
-}
-
 .search {
     display: flex;
-    background-color: #fcfcfc;
+    background-color: #f9f9f9;
     width: auto;
     height: 40px;
-    border: 3px solid #eeeeee;
+    border: 3px solid #39523050;
     border-radius: 10px;
     box-shadow: 0px 5px 5px #00000010;
 }
@@ -160,7 +166,7 @@ td a img {
 
 .search-bar {
     color: #8f8f8f;
-    background-color: #fcfcfc;
+    background-color: #f9f9f9;
     border: none;
     outline: none;
     width: 100%;
@@ -168,6 +174,7 @@ td a img {
 }
 
 .grid-container {
+    margin-left: 10%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
 }
@@ -197,24 +204,28 @@ td a img {
     grid-column: 2/7;
 }
 
+/* Add New Staff */
 .input-grid {
     display: grid;
+    margin-left: 10%;
     grid-template-columns: auto auto;
-    gap: 0px;
+    gap: 30px;
 }
 
 .half-1 {
     grid-column: 1/4;
+    width: auto;
 }
 
 .half-2 {
     margin-top: auto;
     grid-column: 4/7;
+    width: auto;
 }
 
 .table-grid {
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: auto auto auto auto;
 }
 
 .space-1 {
@@ -223,8 +234,8 @@ td a img {
 }
 
 .space-2 {
-    grid-column-start: 8;
-    grid-column-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 .top-part {
@@ -240,7 +251,7 @@ td a img {
 .table {
     margin-top: 24px;
     grid-column-start: 2;
-    grid-column-end: 10;
+    grid-column-end: 4;
 }
 
 input {
