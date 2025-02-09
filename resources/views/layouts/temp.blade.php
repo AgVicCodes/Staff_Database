@@ -61,7 +61,7 @@
 
         </nav>
     </header>
-    <main>
+    <main class="my-content">
         @yield('content')
     </main>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

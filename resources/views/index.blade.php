@@ -5,7 +5,7 @@
 @section('content')
     <h1>INDEX</h1>
     <p>
-        Welcome to ACUMEN COLLEGE
+        Welcome Admin
     </p>
     <a href="/staffNew"><button>Create</button></a>
 @endsection

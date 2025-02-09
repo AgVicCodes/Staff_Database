@@ -35,6 +35,10 @@ Route::get('/blogs', [PageController::class, "blogs"]);
 Route::get('/staff', [PageController::class, "staff"]);
 Route::get('/inventory', [PageController::class, "inventory"]);
 
+Route::get('/react', function () {
+    return view('react');
+});
+
 
 // Route::get('/', [PageController::class, "index"]);
 // Text only constraint

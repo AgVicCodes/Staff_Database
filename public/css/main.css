@@ -3,16 +3,17 @@
 /* General Style */
 :root {
     background-color: #efefef;
+                 /* nav-bg    faded  icons:hover nav-separator button      bg */
     color-scheme: #f9f9f9, #395230, #fff, #eeeeee, #345327, #efefef;
-    /*              nav-bg    faded  icons:hover nav-separator button      bg */
+                 /* nav-bg    faded  icons:hover nav-separator button      bg */
     font-family: "outfit", "Rhodium Libre";
 }
    
 main {
-    /* position: relative; */
+    position: static;
     z-index: -1;
-    margin-left: 5%;
-    margin-top: 10vh;
+    margin-left: 8%;
+    /* margin-top: 10vh; */
     /* width: 80%; */
 }
 
@@ -37,10 +38,10 @@ main {
 header {
     background-color: #f9f9f9;
     width: max-content;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     margin-left: -10px;
-    margin-top: -10px;
+    margin-top: -20px;
     box-shadow: 3px 0px 30px #00000020;
 }
 
