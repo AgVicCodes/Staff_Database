@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>React in Laravels</title>
+		<title>React in Laravel</title>
 		<!-- Link to your compiled CSS if needed -->
 		<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 	</head>

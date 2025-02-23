@@ -17,7 +17,7 @@
 // resources/js/app.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App01';
+import App from './App01.js';
 
 // Ensure that there is an element with id="root" in your Blade template
 // const container = document.getElementById('root');
